@@ -1,8 +1,8 @@
 import React from 'react';
 import "../styles/Home.css";
-import NavBar from './NavBar';
-import Banner from './Banner'
-import Row from "./Row"
+import NavBar from '../component/NavBar';
+import Banner from '../component/Banner'
+import Row from "../component/Row"
 import requests from '../Requests';
 
 function Home() {

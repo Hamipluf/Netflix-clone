@@ -1,16 +1,61 @@
-.loginScreen{
-    position: absolute;
+.loginScreen {
+    position: relative;
     height: 100%;
-    background: url("https://cloudfront-us-east-1.images.arcpublishing.com/eluniverso/7OQFOLGFNJCEVEN7S36GOPRM24.jpg") center no-repeat;
+    background: url("https://assets.nflxext.com/ffe/siteui/vlv3/28b69a57-cadf-43d9-8a95-e5f2e11199de/2d067f08-33c6-41c0-a7ed-5f1a8c007d15/AR-en-20221010-popsignuptwoweeks-perspective_alpha_website_small.jpg") center no-repeat;
+    background-size: cover;
 }
-.loginScreen__logo{
+
+.loginScreen__content>h1 {
+    font-size: 3.125rem;
+    margin-bottom: 20px;
+}
+
+.loginScreen__content>h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.loginScreen__content>h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.loginScreen__content {
+    max-width: 640px;
+    margin: 0 350px;
+    z-index: 1;
+    color: #fff;
+    padding: 20px;
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    left: 0;
+    right: 0;
+
+}
+
+.loginScreen__gradient {
+    width: 100%;
+    z-index: 1;
+    height: 100vh;
+    background: rgba(0, 0, 0, .4);
+    background-image: linear-gradient(to top,
+            rgba(0, 0, 0, .8) 0,
+            rgba(0, 0, 0, 0) 60%,
+            rgba(0, 0, 0, .8) 100%);
+}
+
+.loginScreen__logo {
     position: fixed;
     left: 0;
     width: 150px;
     object-fit: contain;
     padding-left: 20px;
 }
-.loginScreen__btn{
+
+.loginScreen__btn {
     position: fixed;
     right: 60px;
     top: 25px;
@@ -23,4 +68,25 @@
     line-height: normal;
     cursor: pointer;
     border-radius: 5px;
+}
+.loginScreen__input{
+    margin: 20px;
+}
+.loginScreen__input > form > input{
+    padding: 10px;
+    width: 40%;
+    height: 58px;
+    border: none;
+    outline-width: 0;
+    max-width: 600px;
+    margin: 0 2px;
+}
+.loginScreen__getStarted{
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 20px;
+    background-color: #e50914;
+    border: none;
+    color: #fff;
+    cursor: pointer;
 }

@@ -1,6 +1,6 @@
 import React from "react";
-import Home from "./component/Home";
-import LogIn from "./component/LogIn";
+import Home from "./screen/Home";
+import LogIn from "./screen/LogIn";
 import "./styles/App.css"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
@@ -9,6 +9,7 @@ function App() {
   return (
     <div className="app">
       <Router>
+        {/* comprobacion de usuario */}
         {!user ? (
           <LogIn />
         ) : (
