@@ -39,3 +39,4 @@ function Row({ title, fetchUrl, bigRow = false }) {
 }
 
 export default Row
+
