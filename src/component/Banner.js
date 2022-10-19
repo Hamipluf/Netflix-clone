@@ -4,6 +4,7 @@ import axios from "../axios"
 import requests from "../Requests";
 
 function Banner() {
+    
     // Evito el desbordamiento de descrpcion de la pelicula con los caracteres que desee
     const stopText = (string, num) => {
         return string?.length > num ? string.substr(0, num - 1) + "..." : string;
@@ -12,17 +13,17 @@ function Banner() {
     const [movie, setMovie] = useState([]);
 
     useEffect(() => {
-        async function fetchData() {
-            const request = await axios.get(requests.fetchNetflixOriginals);
-            setMovie(
-                // Numero aleatorio para setear la pelicula aleatoria
-                request.data.results[
-                Math.floor(Math.random() * request.data.results.length - 1)
-                ]);
-            // Devuelvo la peticion para que se cierre por completo la promesa
-            return request;
-        }
-        fetchData();
+        axios.get(requests.fetchNetflixOriginals)
+            .then(res => {
+                setMovie(
+                    // Numero aleatorio para setear la pelicula aleatoria
+                    res.data.results[
+                    Math.floor(Math.random() * res.data.results.length - 1)
+                    ]);
+            })
+            .catch(e => {
+                console.log(e)
+            })
     }, []);
     console.log(movie);
     return (

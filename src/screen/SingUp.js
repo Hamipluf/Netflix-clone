@@ -19,26 +19,24 @@ function SingUp() {
       .then((authUser) => {
         console.log(authUser)
       })
-      .catch(err => {
-        alert(err.message)
-      })
+      .catch(err => {alert(err.message);}
+      );
   };
 
 
-  // Verificando si ya ingreso o si debe ingresarS
+  // Verificando si ya ingreso o si debe ingresar
   const signIn = (e) => {
     e.preventDefault();
 
     auth.signInWithEmailAndPassword(
-        emailRef.current.value,
-        passwordRef.current.value
-      )
+      emailRef.current.value,
+      passwordRef.current.value
+    )
       .then((authUser) => {
-        console.log(authUser)
+        console.log(authUser);
       })
-      .catch(err => {
-        alert(err.message)
-      })
+      .catch(err => {alert(err.message);}
+      );
 
   }
 
