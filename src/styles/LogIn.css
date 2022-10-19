@@ -1,6 +1,6 @@
 .loginScreen {
     position: relative;
-    height: 100%;
+    height: 110vh;
     background: url("https://assets.nflxext.com/ffe/siteui/vlv3/28b69a57-cadf-43d9-8a95-e5f2e11199de/2d067f08-33c6-41c0-a7ed-5f1a8c007d15/AR-en-20221010-popsignuptwoweeks-perspective_alpha_website_small.jpg") center no-repeat;
     background-size: cover;
 }
@@ -39,7 +39,7 @@
 .loginScreen__gradient {
     width: 100%;
     z-index: 1;
-    height: 100vh;
+    height: 110vh;
     background: rgba(0, 0, 0, .4);
     background-image: linear-gradient(to top,
             rgba(0, 0, 0, .8) 0,
@@ -69,10 +69,12 @@
     cursor: pointer;
     border-radius: 5px;
 }
-.loginScreen__input{
+
+.loginScreen__input {
     margin: 20px;
 }
-.loginScreen__input > form > input{
+
+.loginScreen__input>form>input {
     padding: 10px;
     width: 40%;
     height: 58px;
@@ -81,7 +83,8 @@
     max-width: 600px;
     margin: 0 2px;
 }
-.loginScreen__getStarted{
+
+.loginScreen__getStarted {
     font-size: 1rem;
     font-weight: 600;
     padding: 20px;
@@ -89,4 +92,85 @@
     border: none;
     color: #fff;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 330px) {
+    .loginScreen {
+        position: absolute;
+        height: 110vh;
+        width: 100%;
+    }
+
+    .loginScreen__content {
+        position: absolute;
+        margin: 0;
+        width: 100%;
+        top: 10%;
+        padding: 0;
+    }
+
+    .loginScreen__btn {
+        position: absolute;
+    }
+
+    .loginScreen__logo {
+        position: absolute;
+    }
+
+    .loginScreen__input {
+        margin: 0;
+        padding: 10px 0 20px 0;
+    }
+}
+@media only screen and (max-width: 425px){
+    .loginScreen {
+        position: absolute;
+        height: 110vh;
+        width: 100%;
+    }
+    .loginScreen__btn {
+        position: absolute;
+    }
+
+    .loginScreen__logo {
+        position: absolute;
+    }
+
+    .loginScreen__input {
+        margin: 0;
+        padding: 10px 0 20px 0;
+    }
+    .loginScreen__content {
+        position: absolute;
+        margin: 0;
+        width: 100%;
+        top: 20%;
+        padding: 0;
+    }
+}
+@media only screen and (max-width: 1024px){
+    .loginScreen {
+        position: absolute;
+        height: 110vh;
+        width: 100%;
+    }
+    .loginScreen__btn {
+        position: absolute;
+    }
+
+    .loginScreen__logo {
+        position: absolute;
+    }
+
+    .loginScreen__input {
+        margin: 0;
+        padding: 10px 0 20px 0;
+    }
+    .loginScreen__content {
+        position: absolute;
+        margin: auto;
+        width: 100%;
+        top: 20%;
+        
+    }
 }

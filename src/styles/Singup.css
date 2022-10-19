@@ -38,14 +38,22 @@
 
 }
 
-.singUpScreen > form > h4 {
+.singUpScreen>form>h4 {
     text-align: left;
     margin-top: 30px;
 }
-.signUpScreen__ocult{
+
+.signUpScreen__ocult {
     color: #919191;
 }
-.signUpScreen__link:hover{
+
+.signUpScreen__link:hover {
     cursor: pointer;
     text-decoration: underline;
+}
+
+@media only screen and (max-width: 375px) {
+    .singUpScreen {
+        margin: 10px;
+    }
 }

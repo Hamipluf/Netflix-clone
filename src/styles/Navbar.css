@@ -1,6 +1,4 @@
-:root{
-    --black: #111;
-}
+
 .nav{
     position: fixed;
     width: 100%;
@@ -10,7 +8,7 @@
     z-index: 1;
 }
 .nav__bg{
-    background: var(--black);
+    background: #111;
 }
 
 .nav__content {
@@ -35,4 +33,15 @@
     top: 15px;
     right: 20px;
     width: 30px;
+}
+@media only screen and (max-width: 330px){
+    .nav{
+        display: grid;
+        grid-template-columns: 2 1fr;
+        width: 50%;
+
+    }
+    .nav__content-avatar{
+        position: inherit;
+    }
 }

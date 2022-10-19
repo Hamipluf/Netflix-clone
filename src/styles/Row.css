@@ -14,7 +14,7 @@
     display: none;
 }
 .row__image {
-    max-height: 200px;
+    max-height: 150px;
     object-fit: contain;
     margin-right: 10px;
     width: 100%;
@@ -30,4 +30,13 @@
 .row__imageBig:hover{
     transform: scale(1.09);
     opacity: 1;
+}
+@media only screen and (max-width: 425px){
+    .row__imageBig {
+        max-height: 250px;
+    }
+    #root > div > div > div:nth-child(3) > h2{
+        font-size: 1.2rem;
+    }
+    
 }

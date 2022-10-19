@@ -98,3 +98,117 @@ hr {
     margin-bottom: 10px;
 
 }
+@media only screen and (max-width: 330px){
+    .profileScreen__info>img {
+        height: 50px;
+        margin: 10px;
+    }
+   .profileScreen__content{
+    width: 100%;
+   }
+   .profileScreen__content > h1{
+    font-size: 30px;
+    font-weight: 400;
+    border-bottom: 1px solid #282c2d;
+    margin: 30px 10px;
+   }
+   .profileScreen__details>h2 {
+    background-color: #919191;
+    padding: 10px 5px;
+    font-size: 15px;
+    width: 90%;
+    border-radius: 2px;
+   }
+   .profileScreen {
+    width: 100%;
+    color: #fff;
+}
+.nav__content-avatar {   
+    right: 30px;    
+}
+.profileScreen__plans {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: start;
+    height: 70%;
+}
+.profileScreen__signOut {
+   width: 100%;
+}
+}
+@media only screen and (max-width: 425px){
+    .profileScreen__info>img {
+        height: 50px;
+        margin: 10px;
+    }
+   .profileScreen__content{
+    width: 100%;
+   }
+   .profileScreen__content > h1{
+    font-size: 30px;
+    font-weight: 400;
+    border-bottom: 1px solid #282c2d;
+    margin: 30px 10px;
+   }
+   .profileScreen__details>h2 {
+    background-color: #919191;
+    padding: 10px 5px;
+    font-size: 15px;
+    width: 90%;
+    border-radius: 2px;
+   }
+   .profileScreen {
+    width: 100%;
+    color: #fff;
+}
+.nav__content-avatar {   
+    right: 30px;    
+}
+.profileScreen__plans {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: start;
+    height: 70%;
+}
+.profileScreen__signOut {
+   width: 100%;
+}
+}
+@media only screen and (max-width: 725px){
+    .profileScreen__info>img {
+        height: 50px;
+        margin: 10px;
+    }
+   .profileScreen__content{
+    width: 100%;
+   }
+   .profileScreen__content > h1{
+    font-size: 30px;
+    font-weight: 400;
+    border-bottom: 1px solid #282c2d;
+    margin: 30px 10px;
+   }
+   .profileScreen__details>h2 {
+    background-color: #919191;
+    padding: 10px 5px;
+    font-size: 15px;
+    width: 90%;
+    border-radius: 2px;
+   }
+   .profileScreen {
+    width: 100%;
+    color: #fff;
+}
+.nav__content-avatar {   
+    right: 30px;    
+}
+.profileScreen__plans {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: start;
+    height: 70%;
+}
+.profileScreen__signOut {
+   width: 100%;
+}
+}
